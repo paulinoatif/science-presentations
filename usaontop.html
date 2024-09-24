@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Official Units of Science</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000000;
+        }
+        .slide {
+            width: 100%;
+            height: 100%;
+            display: none;
+            padding: 30px;
+            box-sizing: border-box;
+            background: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        h1 {
+            font-size: 4vw;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 3vw;
+            color: #ff9900;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        ul {
+            font-size: 2vw;
+            line-height: 1.4;
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 0;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        .controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+        }
+        button {
+            font-size: 1.5em;
+            padding: 15px 30px;
+            margin: 0 10px;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: rgba(255,255,255,0.4);
+        }
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+        }
+        .image-container {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .quiz-link {
+            font-size: 2.5vw;
+            color: #ff9900;
+            text-decoration: none;
+        }
+        .quiz-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 6vw;
+            }
+            h2 {
+                font-size: 4.5vw;
+            }
+            ul {
+                font-size: 3vw;
+            }
+            .quiz-link {
+                font-size: 4vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="slide0" class="slide active">
+        <h1>The Official Units of Science</h1>
+        <h2>"Bloody British Propaganda"</h2>
+    </div>
+
+    <div id="slide1" class="slide">
+        <h1>The International System of Units (SI) in Chemistry</h1>
+        <div class="image-container">
+            <img src="images/International_SI.jpg" alt="SI Units in Chemistry">
+        </div>
+        <ul>
+            <li>Standardized system for scientific measurements worldwide</li>
+            <li>Based on seven base units, all other units are derived from these</li>
+            <li>Some units, like the kilogram, were once based on physical artifacts</li>
+            <li>The IPK (International Prototype Kilogram) used to define the kilogram</li>
+            <li>Units are arbitrary but crucial for scientific consistency and communication</li>
+        </ul>
+    </div>
+
+    <div id="slide2" class="slide">
+        <h1>The Birth of the Metric System</h1>
+        <div class="image-container">
+            <img src="images/murica_meme.jpg" alt="Birth of Metric System">
+        </div>
+        <ul>
+            <li>Originated in France during the French Revolution</li>
+            <li>Aimed to rationalize and unify measurements</li>
+            <li>Based on the decimal system for ease of calculation</li>
+            <li>Initially defined using natural constants, like Earth's size</li>
+            <li>Gradually adopted globally, despite some resistance (e.g., U.S.)</li>
+        </ul>
+    </div>
+
+    <div id="slide3" class="slide">
+        <h1>Evolution to the SI</h1>
+        <div class="image-container">
+            <img src="images/french_SI.jpg" alt="Evolution to SI">
+        </div>
+        <ul>
+            <li>Established in 1960 by the 11th General Conference on Weights and Measures</li>
+            <li>Builds upon the metric system, incorporating electromagnetic units</li>
+            <li>Regularly updated to reflect advancements in measurement science</li>
+            <li>Some units, like the second, are based on natural phenomena</li>
+            <li>The second is defined by cesium-133 atom's radiation periods</li>
+        </ul>
+    </div>
+
+    <div id="slide4" class="slide">
+        <h1>SI Base Units</h1>
+        <div class="image-container">
+            <img src="images/revised_si.jpg" alt="SI Base Units">
+        </div>
+        <ul>
+            <li>Length: meter (m)</li>
+            <li>Mass: kilogram (kg) - now defined by the Planck constant</li>
+            <li>Time: second (s)</li>
+            <li>Electric current: ampere (A)</li>
+            <li>Temperature: kelvin (K)</li>
+            <li>Amount of substance: mole (mol)</li>
+            <li>Luminous intensity: candela (cd) - based on 2640 lumens</li>
+        </ul>
+    </div>
+
+    <div id="slide5" class="slide">
+        <h1>Why Kilogram?</h1>
+        <div class="image-container">
+            <img src="images/IPK.jpg" alt="Why Kilogram">
+        </div>
+        <ul>
+            <li>Originally defined as the mass of 1 liter of water at 4°C</li>
+            <li>The IPK was a physical artifact that defined the kilogram</li>
+            <li>Redefined in 2019 using the Planck constant for improved stability</li>
+            <li>Practical for scientific applications and everyday use</li>
+            <li>Allows for precise measurements from subatomic to cosmic scales</li>
+        </ul>
+    </div>
+
+    <div id="slide6" class="slide">
+        <h1>Derived Units</h1>
+        <div class="image-container">
+            <img src="images/derived.jpg" alt="Derived Units">
+        </div>
+        <ul>
+            <li>Formed by combining base units</li>
+            <li>Speed: meters per second (m/s)</li>
+            <li>Force: newton (N) = kg⋅m/s²</li>
+            <li>Energy: joule (J) = N⋅m</li>
+            <li>Power: watt (W) = J/s</li>
+            <li>Voltage: volt (V) - 9V can give you a shock!</li>
+        </ul>
+    </div>
+
+    <div id="slide7" class="slide">
+        <h1>Supplementary Units</h1>
+        <div class="image-container">
+            <img src="images/supplementary.jpg" alt="Supplementary Units">
+        </div>
+        <ul>
+            <li>Now part of derived units, but historically had a special status</li>
+            <li>Plane angle: radian (rad)</li>
+            <li>Solid angle: steradian (sr)</li>
+            <li>Both are dimensionless units, representing ratios</li>
+            <li>Essential in fields like optics and computer graphics</li>
+        </ul>
+    </div>
+
+    <div id="slide8" class="slide">
+        <h1>Importance of SI</h1>
+        <div class="image-container">
+            <img src="images/Stastic.jpg" alt="Importance of SI">
+        </div>
+        <ul>
+            <li>Universal measurement language for global scientific communication</li>
+            <li>Enables collaboration and data sharing worldwide</li>
+            <li>Ensures experimental reproducibility</li>
+            <li>Simplifies calculations and unit conversions</li>
+            <li>Critical for avoiding costly mistakes (e.g., Mars Climate Orbiter crash 193 million$ error)</li>
+        </ul>
+    </div>
+
+    <div id="slide9" class="slide">
+        <h1>U.S. Customary System</h1>
+        <div class="image-container">
+            <img src="images/customary.jpg" alt="U.S. Customary System">
+        </div>
+        <ul>
+            <li>Not using SI as primary system, though SI is used in scientific contexts</li>
+            <li>Historical inertia and cultural attachment to familiar units</li>
+            <li>Gradual adoption of SI in certain sectors (e.g., medicine, military)</li>
+            <li>Conversion between systems can lead to errors (e.g., 60 mph ≈ 9.3 x 10-12 light-years/second)</li>
+            <li>Illustrates the arbitrary nature of all measurement systems</li>
+        </ul>
+    </div>
+
+    <div id="slide10" class="slide">
+        <h1>Quiz</h1>
+        <div class="image-container">
+            <img src="images/joever.jpg" alt="Quiz">
+        </div>
+        <a href="https://quizizz.com/admin/quiz/57f6e59b9698a70045bc7e6c/identifying-metric-units" class="quiz-link">Take the Quiz</a>
+    </div>
+
+    <div class="controls">
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 11;
+
+        function showSlide(n) {
+            document.querySelector('.slide.active').classList.remove('active');
+            document.getElementById('slide' + n).classList.add('active');
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.body;
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.width = `${Math.random() * 10 + 5}px`;
+                particle.style.height = particle.style.width;
+                particle.style.background = `rgba(255, 255, 255, ${Math.random() * 0.5 + 0.25})`;
+                particle.style.left = `${Math.random() * 100}vw`;
+                particle.style.top = `${Math.random() * 100}vh`;
+                particle.style.animation = `float ${Math.random() * 10 + 5}s linear infinite`;
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        createParticles();
+
+        // Add animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float {
+                0% { transform: translateY(0) rotate(0deg); }
+                100% { transform: translateY(-100vh) rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
